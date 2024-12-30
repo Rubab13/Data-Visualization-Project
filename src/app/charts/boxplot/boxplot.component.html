@@ -1,0 +1,118 @@
+<div class="chart-buttons">
+  <button 
+    (click)="selectChart('EducationLevel')" 
+    [class.active]="selectedChart === 'EducationLevel'">
+    Education Level
+  </button>
+  <button 
+    (click)="selectChart('Pay Grade')" 
+    [class.active]="selectedChart === 'Pay Grade'">
+    Pay Grade
+  </button>
+  <button 
+    (click)="selectChart('Experience')" 
+    [class.active]="selectedChart === 'Experience'">
+    Experience Level
+  </button>
+  <button 
+    (click)="selectChart('OrgImpact')" 
+    [class.active]="selectedChart === 'OrgImpact'">
+    Organizational Impact
+  </button>
+  <button 
+    (click)="selectChart('ProblemSolving')" 
+    [class.active]="selectedChart === 'ProblemSolving'">
+    Problem Solving
+  </button>
+  <button 
+    (click)="selectChart('Supervision')" 
+    [class.active]="selectedChart === 'Supervision'">
+      Supervision
+  </button>
+  <button 
+    (click)="selectChart('ContactLevel')" 
+    [class.active]="selectedChart === 'ContactLevel'">
+      Contact Level
+  </button>
+</div>
+
+<div class="card graph-container">
+  <div class="p-2 fs-5">
+    <p>Boxplot Distribution</p>
+  </div>
+
+  <div class="d-flex">
+    <div id="boxPlot" class="h-75"></div>
+    <!-- Educational mapping -->
+    <div class="education-card" *ngIf="selectedChart === 'EducationLevel'">
+      <h3 class="card-title">Education Level Mapping</h3>
+      <ul class="education-list">
+        <li *ngFor="let level of education_mapping | keyvalue">
+          <strong>{{ level.key }}:</strong> {{ level.value }}
+        </li>
+      </ul>
+    </div>
+
+    <!-- Paygrade Mapping -->
+    <div class="education-card" *ngIf="selectedChart === 'Pay Grade'">
+      <h3 class="card-title">Pay Grade Mapping</h3>
+      <ul class="education-list">
+        <li *ngFor="let level of payGradeMapping | keyvalue">
+          <strong>{{ level.key }}:</strong> {{ level.value }}
+        </li>
+      </ul>
+    </div>
+
+    <!-- Experience Mapping -->
+    <div class="education-card" *ngIf="selectedChart === 'Experience'">
+      <h3 class="card-title">Experience Level Mapping</h3>
+      <ul class="education-list">
+        <li *ngFor="let level of experienceMapping | keyvalue">
+          <strong>{{ level.key }}:</strong> {{ level.value }}
+        </li>
+      </ul>
+    </div>
+
+    <!-- Organizational Impact Mapping -->
+    <div class="education-card" *ngIf="selectedChart === 'OrgImpact'">
+      <h3 class="card-title">Organizational Impact Mapping</h3>
+      <ul class="education-list">
+        <li *ngFor="let level of organizationImpactMapping | keyvalue">
+          <strong>{{ level.key }}:</strong> {{ level.value }}
+        </li>
+      </ul>
+    </div>
+
+    <!-- problem Solving Mapping -->
+    <div class="education-card" *ngIf="selectedChart === 'ProblemSolving'">
+      <h3 class="card-title">Problem Solving Mapping</h3>
+      <ul class="education-list">
+        <li *ngFor="let level of problemSolvingMapping | keyvalue">
+          <strong>{{ level.key }}:</strong> {{ level.value }}
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contact Level Mapping -->
+    <div class="education-card" *ngIf="selectedChart === 'ContactLevel'">
+      <h3 class="card-title">Contact Level Mapping</h3>
+      <ul class="education-list">
+        <li *ngFor="let level of contactLevelMapping | keyvalue">
+          <strong>{{ level.key }}:</strong> {{ level.value }}
+        </li>
+      </ul>
+    </div>
+
+    <!-- Supervision Mapping -->
+    <div class="education-card" *ngIf="selectedChart === 'Supervision'">
+      <h3 class="card-title">Supervision Mapping</h3>
+      <ul class="education-list">
+        <li *ngFor="let level of supervisionMapping | keyvalue">
+          <strong>{{ level.key }}:</strong> {{ level.value }}
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>

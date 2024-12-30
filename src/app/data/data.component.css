@@ -1,0 +1,91 @@
+/* General Container Styling */
+.container {
+  width: 95%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* Scrollable Table Container */
+.table-container {
+  width: 100%;
+  max-height: 500px; /* Adjust height as needed */
+  overflow-x: auto; /* Enable horizontal scroll */
+  overflow-y: auto; /* Enable vertical scroll */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+/* Table Header Styling */
+th {
+  position: sticky;
+  top: 0;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+/* Table Cell Styling */
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+  white-space: nowrap; /* Prevent content wrapping */
+}
+
+/* Row Hover Effect */
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Alternate Row Colors */
+tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+/* Pagination Controls */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #9E9E9E;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #388E3C;
+}
+
+/* Page Indicator */
+.pagination span {
+  font-size: 14px;
+  font-weight: 500;
+}

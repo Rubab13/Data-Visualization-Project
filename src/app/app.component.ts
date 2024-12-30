@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'abc';
+
+  loadingScreenStatus: boolean = true;
+
+  handleLoadingComplete(status: boolean) {
+    this.loadingScreenStatus = status;
+    // console.log('Loading screen completed:', this.loadingScreenStatus);
+  }
 }

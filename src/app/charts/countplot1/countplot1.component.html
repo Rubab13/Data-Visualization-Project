@@ -1,0 +1,30 @@
+<div class="chart-buttons">
+  <button 
+    (click)="selectChart('Job Family')" 
+    [class.active]="selectedChart === 'Job Family'">
+    Job Family
+  </button>
+  <button 
+    (click)="selectChart('Pay Grade')" 
+    [class.active]="selectedChart === 'Pay Grade'">
+    Pay Grade
+  </button>
+  <button 
+    (click)="selectChart('Education Level')" 
+    [class.active]="selectedChart === 'Education Level'">
+    Education Level
+  </button>
+  <!--<button 
+    (click)="selectChart('country')" 
+    [class.active]="selectedChart === 'country'">
+    Country
+  </button> -->
+</div>
+
+<div class="card graph-container">
+  <div class="p-2 fs-5">
+    <p>{{ selectedChart }} Distribution</p>
+  </div>
+  <div id="countPlot">
+  </div>
+</div>

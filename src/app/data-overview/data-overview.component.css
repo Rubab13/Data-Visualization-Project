@@ -1,0 +1,232 @@
+.container {
+  min-height: 70vh;
+}
+
+.section {
+  width: 100%;
+}
+
+.heading {
+  width: 100%;
+  height: 100%;
+}
+
+/* Dataset Overview CSS */
+
+.dataset-overview-container {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+/* Dataset Overview CSS end */
+
+/* Card CSS */
+.card {
+  background: white;
+  border-radius: 10px;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ }
+ 
+ .shadow {
+  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+              0 0  0 2px rgb(190, 190, 190),
+              0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+/* Data Dictionary CSS */
+
+.data-dictionary-container {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+/* Data Dictionary CSS end */
+
+/* Slider CSS */
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-content {
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-card {
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.nav-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 100px;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+/* Slider CSS end */
+ 
+ 
+/* Statistical Summary CSS */
+
+.statistical-summary-container {
+  margin: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary-section {
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+strong {
+  color: #333;
+}
+
+/* Statistical Summary CSS end */
+
+
+
+.statistical-summary-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.summary-section {
+  margin-bottom: 30px;
+}
+
+.summary-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: disc; /* Bullet points */
+  padding-left: 20px; /* Add space for bullet points */
+}
+
+ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+ul li strong {
+  color: #333;
+}
+
+/* Flexbox layout for two columns in numerical columns section */
+.numerical-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columns {
+  width: 48%; /* Adjust width for each column */
+}

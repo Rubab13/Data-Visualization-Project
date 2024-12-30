@@ -1,0 +1,81 @@
+<section class="summary-container bg-light p-4 rounded-lg my-5 shadow-lg">
+  <div class="summary-header text-center mb-4">
+    <h2 class="">Job Family Overview</h2>
+    <p class="text-muted">Summary of the selected job family</p>
+  </div>
+  
+  <div class="summary-details">
+    <div class="detail-item d-flex justify-content-between align-items-center">
+      <div>
+        <strong class="text-dark">Job Family:</strong>
+        <p class="">{{ summary[currentIndex]?.JobFamilyDescription }}</p>
+      </div>
+      <i class="fas fa-user-tie"></i>
+    </div>
+    
+    <div class="detail-item d-flex justify-content-between align-items-center">
+      <div>
+        <strong class="text-dark">Average Experience:</strong>
+        <p class="">{{ summary[currentIndex]?.average_experience | number:'1.1-1' }} years</p>
+      </div>
+      <i class="fa-solid fa-timeline"></i>
+    </div>    
+    <div class="detail-item d-flex justify-content-between align-items-center">
+      <div>
+        <strong class="text-dark">Education Level Mode:</strong>
+        <p class="">{{ summary[currentIndex]?.education_level_mode }}</p>
+      </div>
+      <i class="fa-solid fa-user-graduate" style="font-size: 24px;"></i>
+    </div>
+    <div class="detail-item d-flex justify-content-between align-items-center">
+      <div>
+        <strong class="text-dark">Highest Pay Grade:</strong>
+        <p class="">{{ summary[currentIndex]?.highest_paygrade }}</p>
+      </div>
+      <i class="fa-solid fa-dollar-sign"></i>
+      <!-- <i class="fa-solid fa-money-bill-trend-up"></i> -->
+    </div>
+    <div class="detail-item d-flex justify-content-between align-items-center">
+      <div>
+        <strong class="text-dark">Lowest Pay Grade:</strong>
+        <p class="">{{ summary[currentIndex]?.lowest_paygrade }}</p>
+      </div>
+      <i class="fa-solid fa-dollar-sign"></i>
+    </div>
+    <div class="detail-item d-flex justify-content-between align-items-center">
+      <div>
+        <strong class="text-dark">Contact Level Category Mode:</strong>
+        <p class="">{{ summary[currentIndex]?.contact_level_category_mode }}</p>
+      </div>
+      <i class="fa-regular fa-address-card"></i>
+    </div>
+    <div class="detail-item d-flex justify-content-between align-items-center">
+      <div>
+        <strong class="text-dark">Average Financial Budget:</strong>
+        <p class="">{{ summary[currentIndex]?.average_financial_budget | number:'1.2-2' | currency: 'USD' }}</p>
+      </div>
+      <i class="fa-solid fa-coins"></i>
+    </div>
+    <div class="detail-item d-flex justify-content-between align-items-center">
+      <div>
+        <strong class="text-dark">Average Problem Solving:</strong>
+        <p class="">{{ summary[currentIndex]?.average_problem_solving | number:'1.0-1' }}</p>
+      </div>
+      <i class="fa-solid fa-circle-check"></i>
+    </div>
+    <div class="detail-item d-flex justify-content-between align-items-center">
+      <div>
+        <strong class="text-dark">Highest Education Level:</strong>
+        <p class="">{{ summary[currentIndex]?.highest_education_level }}</p>
+      </div>
+      <i class="fa-solid fa-user-graduate"></i>
+    </div>
+    <div class="detail-item d-flex justify-content-between align-items-center">
+      <div>
+        <strong class="text-dark">Lowest Education Level:</strong>
+        <p class="">{{ summary[currentIndex]?.lowest_education_level }}</p>
+      </div>
+      <i class="fa-solid fa-user-graduate"></i>
+    </div>
+  </div>
+</section>

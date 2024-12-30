@@ -1,14 +1,41 @@
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.graph-container {
-  background-color: pink;
-  height: 100vh;
+.scatter-plot-container {
   width: 100%;
-  margin: 20px auto 30px auto;
+  height: 450px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 8px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.scatter-plot-container {
+  text-align: center;
+}
+
+svg {
+  border: 1px solid #ccc;
+}
+
+.dot {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.dot:hover {
+  transform: scale(1.5);
+}
+
 /* Card CSS */
 .card {
   box-sizing: border-box;

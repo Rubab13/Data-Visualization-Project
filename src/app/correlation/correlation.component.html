@@ -1,0 +1,24 @@
+<div class="correlation-heading">
+  <h2>Correlation for Numerical Columns</h2>
+</div>
+
+<div class="correlation-buttons m-auto">
+  <!-- Create buttons for each numerical column -->
+  <button *ngFor="let column of columns" 
+          (click)="selectColumn(column)" 
+          [class.active]="selectedColumns.includes(column)">
+    {{ column }}
+  </button>
+</div>
+
+<!-- Show message if only one column is selected -->
+<div *ngIf="selectedColumns.length === 1">
+  <p><strong>You have selected: {{ selectedColumns[0] }}.</strong></p>
+  <p>To calculate correlation, you need to select 2 columns.</p>
+</div>
+
+<!-- Show correlation if exactly two columns are selected -->
+<div *ngIf="selectedColumns.length === 2">
+  <p><strong>Correlation between {{ selectedColumns[0] }} and {{ selectedColumns[1] }}:</strong></p>
+  <p>{{ correlation[selectedColumns[0]][selectedColumns[1]] }}</p>
+</div>

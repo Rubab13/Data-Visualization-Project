@@ -1,0 +1,45 @@
+.container-fluid {
+  height: 12vh;
+}
+.button-container {
+  display: flex;
+  /* background-color: rgba(0, 73, 144); */
+  background-color: #4caf50;
+  width: 70%;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+    rgba(0, 73, 144, 0.5) 5px 10px 15px; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+    rgba(76, 175, 80, 0.5) 5px 10px 15px;
+  transition: all 0.5s;
+}
+.button-container:hover {
+  width: 80%;
+  transition: all 0.5s;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 200px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.nav-text {
+  font-size: 0.9rem;
+}

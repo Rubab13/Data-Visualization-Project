@@ -1,0 +1,72 @@
+section {
+  min-height: 80vh;
+  width: 100%;
+}
+
+/* General styling for the summary container */
+.summary-container {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Styling for the header */
+.summary-header h2 {
+  /* color: #007bff; */
+   /* Primary color for the header */
+  color: #4caf50;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.summary-header p {
+  color: #6c757d; /* Light gray for the subtitle */
+  font-size: 16px;
+}
+
+/* Styling for each detail item */
+.summary-details .detail-item {
+  padding: 14px 17px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 20px 15px 0;
+  cursor: pointer;
+}
+
+/* Strong text for titles */
+.detail-item strong {
+  color: #495057;
+  font-size: 16px;
+}
+
+/* Styling for values (text) */
+.detail-item p {
+  /* color: #007bff; */
+   /* Blue color for values */
+  color: #4caf50;
+  font-size: 18px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+/* Hover effect for the detail items */
+.detail-item:hover {
+  background-color: #f1f3f5;
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+/* Add a subtle shadow on hover */
+.summary-details .detail-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+i {font-size: 24px;}

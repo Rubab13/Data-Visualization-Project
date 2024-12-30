@@ -1,14 +1,10 @@
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.graph-container {
-  background-color: pink;
-  height: 100vh;
+#countPlot {
   width: 100%;
-  margin: 20px auto 30px auto;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
+
 /* Card CSS */
 .card {
   box-sizing: border-box;
@@ -32,4 +28,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .card:hover {
   border: 1px solid black;
   transform: scale(1.05);
+}
+
+.graph-container {
+  width: 100%;
+  /* overflow-x: auto; */
+}
+
+.bar {
+  stroke: #fff;
+}
+
+.tooltip {
+  font-size: 12px;
+  text-align: center;
+  z-index: 10;
 }

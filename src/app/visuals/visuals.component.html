@@ -1,0 +1,42 @@
+<div class="container d-flex justify-content-center flex-column align-items-center py-5 my-4">
+
+  <!-- This is the code for showing the count plot for Job family distribution -->
+  <div class="container mb-5 py-5">
+    <app-countplot1 [data]="data"></app-countplot1>
+  </div>
+
+  <!-- Contact Level Data Distribution -->
+  <div class="container mb-5 py-5">
+    <app-contact-level-pie-chart [contactLevelData]="contactLevelData"></app-contact-level-pie-chart>
+  </div>
+
+  <!-- This is the graph that shows the distribution of paygrade accross job families -->
+  <!-- <div class="container mb-5 py-5">
+    <app-paygrade-chart [data]="data"></app-paygrade-chart>
+  </div> -->
+
+  <div class="container mb-5 py-5">
+    <app-boxplot [data]="data"></app-boxplot>
+  </div>
+
+  <!-- this is my scatter plot and it is not functional yet. -->
+  <div class="container mb-5 py-5 d-flex justify-content-center">
+    <app-scatter1 [data]="data"></app-scatter1>
+  </div>
+
+  <!-- Correlation Component -->
+  <div class="container mb-5 py-5">
+    <app-correlation></app-correlation>
+  </div>
+
+  <!-- Heat map -->
+  <div class="container mb-5 py-5">
+    <app-heatmap></app-heatmap>
+  </div>
+
+  <!-- bar1 -->
+  <div class="container mb-5 py-5">
+    <app-bar1></app-bar1>
+  </div>
+
+</div>

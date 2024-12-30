@@ -1,0 +1,129 @@
+section{
+  /* background-color: rgb(177, 146, 146);  */
+  min-height: 85vh ;
+}
+
+.metrics {
+  height: 100%;
+  width: 50%;
+  /* display: flex; */
+}
+
+/* Metric Card CSS */
+
+/* From Uiverse.io by Yaya12085 */ 
+.stats {
+  display: inline-grid;
+  background-color: #111111;
+  color: #fff;
+  border-radius: 1rem;
+  border: 1px solid gray;
+}
+
+.shadow {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.stat {
+  display: inline-grid;
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.stat-title {
+  grid-column-start: 1;
+  white-space: nowrap;
+  color: rgb(197, 194, 194);
+}
+
+.stat-value {
+  grid-column-start: 1;
+  white-space: nowrap;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+}
+
+.stat-desc {
+  grid-column-start: 1;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgb(197, 194, 194);
+}
+
+/* Metric Card CSS end */
+
+
+.metrics-container {
+  width: 100%;
+  max-width: 50%;
+  margin: auto;
+  padding: 20px;
+  height: 100%;
+}
+
+.stats-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 8px 14px;
+  margin: 8px 5px;
+}
+
+.stats-card:hover {
+  transform: translateY(13px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.stat-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1f77b4;
+}
+
+.stat-desc {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .stats-card {
+    margin: 10px 0;
+    width: 100%;
+  }
+}
+
+
+
+
+
+.w-50 {
+  width: 50%;
+  margin: auto; /* Center the div horizontally */
+}
+
+.w-50 img {
+  width: 80%; /* Ensures the image fills the div */
+  height: auto; /* Maintains the aspect ratio of the image */
+  object-fit: cover; /* Ensures the image covers the div completely */
+}

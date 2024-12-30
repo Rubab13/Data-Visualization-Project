@@ -1,14 +1,10 @@
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-.graph-container {
-  background-color: pink;
-  height: 100vh;
+#countPlot {
   width: 100%;
-  margin: 20px auto 30px auto;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
+
 /* Card CSS */
 .card {
   box-sizing: border-box;

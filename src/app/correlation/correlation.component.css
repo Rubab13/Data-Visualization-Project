@@ -1,0 +1,94 @@
+/* Container for the buttons */
+.correlation-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Styling for each button */
+.correlation-buttons button {
+  background-color: #42a5f5; /* Green background */
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Hover effect on buttons */
+.correlation-buttons button:hover {
+  background-color: #1e88e5;
+  transform: scale(1.05);
+}
+
+.correlation-buttons button.active {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}
+
+/* Styling for the selected columns section */
+div > p {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Styling for the correlation result text */
+div > p + p {
+  font-size: 20px;
+  color: #007BFF;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: normal;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Add some spacing around the container */
+div {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling for the message when one column is selected */
+div > p {
+  font-size: 16px;
+  text-align: center;
+  color: #FF6347; /* Red color for warning */
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Additional styling for the normal message */
+div > p + p {
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+}
+
+
+/* Heading Styling */
+.correlation-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.correlation-heading h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 2px solid #040450;
+  display: inline-block;
+  padding-bottom: 10px;
+}

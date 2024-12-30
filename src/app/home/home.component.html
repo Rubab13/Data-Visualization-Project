@@ -1,0 +1,43 @@
+<section class="d-flex justify-content-center align-items-center">
+
+  <!-- Showing key metrics here -->
+  <div class="metrics-container d-flex flex-column justify-content-end">
+    <!-- Row 1 -->
+    <div class="row d-flex justify-content-evenly">
+      <div class="stats-card shadow col-10">
+        <div class="stat">
+          <div class="stat-title">Total Jobs Listed</div>
+          <div class="stat-value">{{ totalJobs }}</div>
+        </div>
+      </div>
+    </div>
+    <!-- Row 2 -->
+    <div class="row d-flex justify-content-evenly">
+      <div class="stats-card shadow col-10">
+        <div class="stat">
+          <div class="stat-title">Most In-Demand Job Category</div>
+          <div class="stat-value">{{ mostInDemandJob }}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row d-flex justify-content-evenly">
+      <div class="stats-card shadow col-10">
+        <div class="stat">
+          <div class="stat-title">Average Salary</div>
+          <div class="stat-value">{{ currentSalary | currency }}</div>
+          <div class="stat-desc">{{ currentCategory }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-50 d-flex justify-content-center">
+    <img src="../../assets/hero.png" alt="Image Description">
+  </div>  
+
+</section>
+
+<ng-template #loading>
+  <p>Loading metrics...</p>
+</ng-template>

@@ -1,0 +1,33 @@
+.heatmap-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+svg text {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+svg .axis text {
+  font-size: 12px;
+}
+
+svg .axis path,
+svg .axis line {
+  fill: none;
+  stroke: #ccc;
+  shape-rendering: crispEdges;
+}
+
+.tooltip {
+  position: absolute;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none; /* Prevents the tooltip from interfering with mouse events */
+}

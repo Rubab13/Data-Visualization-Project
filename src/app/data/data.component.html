@@ -1,0 +1,30 @@
+<div class="container my-5">
+
+  <!-- Scrollable Table Container -->
+  <div class="table-container">
+    <table *ngIf="displayedData.length > 0; else noData">
+      <thead>
+        <tr>
+          <th *ngFor="let col of dataColumns">{{ col.columnName }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of displayedData">
+          <td *ngFor="let col of dataColumns">{{ row[col.columnName] || 'N/A' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- No Data Message -->
+  <ng-template #noData>
+    <p>No data available to display.</p>
+  </ng-template>
+
+  <!-- Pagination Controls -->
+  <div class="pagination my-3 py-4" *ngIf="totalPages > 1">
+    <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+    <span>Page {{ currentPage }} of {{ totalPages }}</span>
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+  </div>
+</div>

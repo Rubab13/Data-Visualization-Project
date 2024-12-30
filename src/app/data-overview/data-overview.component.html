@@ -1,0 +1,179 @@
+<div class="container p-5">
+
+  <!-- Dataset name -->
+  <!-- <div class="heading card shadow d-flex justify-content-center align-items-center p-3">
+    <p>Job Classification Data</p>
+  </div> -->
+
+  <!-- Dataset Overview -->
+  <div class="border section p-3 mt-3">
+    <div class="dataset-overview-container">
+      <h2 class="my-3">Dataset Overview</h2>
+      <table>
+        <tr>
+          <th>Attribute</th>
+          <th>Details</th>
+        </tr>
+        <tr>
+          <td><strong>Name of Dataset</strong></td>
+          <td>{{ datasetOverview.name }}</td>
+        </tr>
+        <tr>
+          <td><strong>Source</strong></td>
+          <td>{{ datasetOverview.source }}</td>
+        </tr>
+        <tr>
+          <td><strong>Description</strong></td>
+          <td>{{ datasetOverview.description }}</td>
+        </tr>
+        <tr>
+          <td><strong>Purpose</strong></td>
+          <td>{{ datasetOverview.purpose }}</td>
+        </tr>
+        <tr>
+          <td><strong>Size</strong></td>
+          <td>{{ datasetOverview.size }}</td>
+        </tr>
+        <tr>
+          <td><strong>Last Updated</strong></td>
+          <td>{{ datasetOverview.lastUpdated }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Columns -->
+  <div class="mt-5 border section p-2">
+
+    <div class="data-dictionary-container">
+      <h2>Data Dictionary (Schema Information)</h2>
+      <table>
+        <tr>
+          <th>Column Name</th>
+          <th>Data Type</th>
+          <th>Description</th>
+          <!-- <th>Sample Value</th> -->
+        </tr>
+        <tr *ngFor="let column of dataColumns">
+          <td>{{ column.columnName }}</td>
+          <td>{{ column.dataType }}</td>
+          <td>{{ column.description }}</td>
+          <!-- <td>{{ column.sampleValue }}</td> -->
+        </tr>
+      </table>
+    </div>
+
+
+    <!-- This is the slider -->
+    <!-- <div class="slider-container border">
+      <button (click)="prevSlide()" class="nav-button">❮</button>
+
+      <div class="slider-content d-flex flex-column">
+        <!-- <h3>Dataset Columns</h3> -->
+    <!--<div class="card column-card" *ngFor="let column of dataColumns[currentIndex]">
+          <h4>{{ column.column }}</h4>
+          <p>Type: {{ column.type }}</p>
+        </div>
+      </div>
+
+      <button (click)="nextSlide()" class="nav-button">❯</button>
+    </div> -->
+
+  </div>
+
+  <!-- Statistical Summary -->
+  <!-- <div class="mt-5 border section p-2">
+    <div class="statistical-summary-container">
+      <h2>Statistical Summary</h2>
+      <div class="summary-section">
+        <h3>Numerical Columns</h3>
+        <ul>
+          <li><strong>Average Salary:</strong> ${{ statisticalSummary.numerical.averageSalary }}</li>
+          <li><strong>Median Salary:</strong> ${{ statisticalSummary.numerical.medianSalary }}</li>
+          <li><strong>Min Salary:</strong> ${{ statisticalSummary.numerical.minSalary }}</li>
+          <li><strong>Max Salary:</strong> ${{ statisticalSummary.numerical.maxSalary }}</li>
+          <li><strong>Standard Deviation:</strong> ${{ statisticalSummary.numerical.stdDevSalary }}</li>
+        </ul>
+      </div>
+
+      <div class="summary-section">
+        <h3>Categorical Columns</h3>
+        <ul>
+          <li><strong>Most Common City:</strong> {{ statisticalSummary.categorical.mostCommonCity }}</li>
+          <li><strong>Top Department:</strong> {{ statisticalSummary.categorical.topDepartment }}</li>
+          <li><strong>Total Employees:</strong> {{ statisticalSummary.categorical.totalEmployees }}</li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Numerical & Categorical Columns -->
+  <div class="mt-5 border section p-3">
+    <div class="statistical-summary-container p-5">
+      <h2>Dataset Columns</h2>
+  
+      <!-- Numerical Columns Section -->
+      <div class="summary-section">
+        <h3>Numerical Columns</h3>
+        <div class="numerical-columns">
+          <ul class="columns">
+            <li><strong>ID</strong></li>
+            <li><strong>JobFamily</strong></li>
+            <li><strong>JobClass</strong></li>
+            <li><strong>PayGrade</strong></li>
+            <li><strong>EducationLevel</strong></li>
+            <li><strong>Experience</strong></li>
+          </ul>
+          <ul class="columns">
+            <li><strong>OrgImpact</strong></li>
+            <li><strong>ProblemSolving</strong></li>
+            <li><strong>Supervision</strong></li>
+            <li><strong>ContactLevel</strong></li>
+            <li><strong>FinancialBudget</strong></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Categorical Columns Section -->
+      <div class="summary-section">
+        <h3>Categorical Columns</h3>
+        <ul>
+          <li><strong>JobFamilyDescription</strong></li>
+          <li><strong>JobClassDescription</strong></li>
+          <li><strong>PG</strong></li>
+          <li><strong>ContactLevelCategory</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <!-- 
+  you can add the following things
+  . Data Quality Metrics
+Missing Values: Count and percentage per column.
+Duplicates: Number of duplicate rows.
+Outliers: Count and identification (if analyzed).
+✅ 5. Visual Insights (Optional but Effective)
+Bar Charts: Distribution of categorical columns.
+Histograms: Numerical column distributions.
+Pie Charts: Proportion of categories.
+✅ 6. Dataset Accessibility and Permissions
+Who can access this dataset?
+Are there any usage restrictions?
+License information.
+✅ 7. Key Observations/Findings (Optional)
+Highlight any interesting patterns or trends discovered.
+For example: "The highest number of employees joined in 2023."
+🎯 Recommended Layout for Your Page:
+Section 1: Overview
+Section 2: Data Dictionary (Schema Table)
+Section 3: Statistical Summary
+Section 4: Data Quality Metrics
+Section 5: Visual Insights
+Section 6: Accessibility
+ -->
+
+</div>
